@@ -75,7 +75,9 @@ jobs:
         reporter: 'java-junit'
 
         fail-on-error: false
-       fail-on-empty: false
+
+        fail-on-empty: false
+       
     - name: Upload Coverage
 
       if: always() && hashFiles('./target/site/jacoco/jacoco.xml') != ''
